@@ -1,0 +1,30 @@
+name: glow_stuff_with_flutter
+description: Glow stuff with flutter
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_shaders: ^0.0.2
+  photo_view: ^0.14.0
+  rive: ^0.9.1
+  sensors_plus: ^2.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^3.1.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  shaders:
+    - shaders/dir_glow.glsl
+  assets:
+    - assets/
